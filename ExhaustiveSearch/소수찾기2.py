@@ -8,5 +8,4 @@ def solution(n):
     if is_primes[i]:
       for j in range(i+i, n, i):
         is_primes[j] = False
-  # print([i for i in range(2, n) if is_primes[i]])
-  return len([i for i in range(2, n) if is_primes[i]])
+  return [i for i in range(2, n) if is_primes[i]]
